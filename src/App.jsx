@@ -51,7 +51,7 @@ export default function App() {
     e.preventDefault()
     setFormError('')
     const hours = parseFloat(form.hours)
-    if (!form.date) return setFormError('Vaelg en dato')
+    if (!form.date) return setFormError('Vælg en dato')
     if (isNaN(hours) || hours <= 0 || hours > 24) return setFormError('Indtast gyldige timer (0-24)')
     setSubmitting(true)
     const { error } = await supabase.from('time_entries').insert([{
