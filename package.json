@@ -7,16 +7,20 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "playwright test",
+    "check": "npm run lint && npm test && npm run build"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.108.1",
+    "@supabase/supabase-js": "2.108.1",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "react-router-dom": "^7.17.0"
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@babel/core": "7.29.7",
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "1.63.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
