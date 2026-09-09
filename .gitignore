@@ -6,3 +6,4 @@ dist/
 test-results/
 playwright-report/
 artifacts/
+.browser-profile/
