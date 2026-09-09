@@ -3,6 +3,7 @@ dist/
 .netlify/
 .env*
 !.env.example
+!.env.production
 test-results/
 playwright-report/
 artifacts/
